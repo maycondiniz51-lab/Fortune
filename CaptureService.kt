@@ -73,8 +73,7 @@ class CaptureService : Service() {
         bmp.copyPixelsFromBuffer(buffer)
 
         val mainCrop=cropNormalized(bmp,.40f,.28f,.60f,.38f)
-        val historyCrop=cropNormalized(bmp,.00f,.82f,.17f,.91f)
-
+        val historyCrop=cropNormalized(bmp,.00f,.93f,.95f,.985f)
         recognize(mainCrop)
         recognize(historyCrop)
         mainCrop.recycle()
