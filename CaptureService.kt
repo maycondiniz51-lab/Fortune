@@ -109,7 +109,7 @@ class CaptureService : Service() {
             System.currentTimeMillis()-lastAcceptedAt>2500)) {
             lastAccepted=n
             lastAcceptedAt=System.currentTimeMillis()
-            panel.text="FORTUNE\nResultado detectado: $n\nAtualizando indicação..."
+            panel.text="FORTUNE\nNÚMERO DETECTADO: $n"
             // Ponto de integração com o analisador HTML/JS.
         }
     }
